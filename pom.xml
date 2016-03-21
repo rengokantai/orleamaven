@@ -18,6 +18,17 @@
                         <verbose>true</verbose>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <finalName>teSt</finalName>
+                        <forceCreation>true</forceCreation>
+                        <excludes>
+                            <exclude>**/Yd.class</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>

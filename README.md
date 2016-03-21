@@ -125,3 +125,35 @@ remove cached file:
 ```
 git rm -r . --cached
 ```
+
+######6 custom plugin
+```
+mvn archetype:create -DgroupId=me.yd -DartifactId=yd -DarchetypeArtifactId=maven-archetype-mojo -DarchetypeGroupId=org.apache.maven.archetypes
+```
+this will create a new foler named artifactId.
+
+go to this repo, and
+```
+mvn install
+```
+to install this pulgin to local repo.  
+
+If other repo want to install, 
+```
+mvn gpid:artid:touch
+```
+######7 continued.
+Not finish.
+
+##### cp6
+######2 clean
+
+######3 jar plugin
+using package phase:
+```
+mvn package
+```
+or
+```
+mvn jar:jar -Djar.finalName=test -Djar.forceCreation=true
+```
