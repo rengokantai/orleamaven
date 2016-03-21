@@ -52,5 +52,40 @@ mvn dependency:copy-dependencies
 install junit,ctrl shift T, or tweak settings in intellij  
 [Import maven dependencies automatically](http://stackoverflow.com/questions/11454822/import-maven-dependencies-in-intellij-idea)
 
+######4
+```
+mvn help:effective-pom
+```
+change config: mvnhome/conf/
 
+add a remote repo:
+```
+        <profile>
+            <id>spring_remote</id>
+            <repositories>
+                <repository>
+                    <id>spring</id>
+                    <name></name>
+                    <url>http://repo.spring.io/release/</url>
+                </repository>
+            </repositories>
+        </profile>
+```
 
+######5 scope
+
+like this:
+```
+<scope>test</scope>
+```
+will only be available in ```mvn test```  
+If we change scope to `compile` then  
+```
+mvn -X compile
+```
+we can see junit.
+
+######6 exclusions
+```
+exclusions>exclusion>groupId+artifactId
+```

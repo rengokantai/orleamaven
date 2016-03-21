@@ -25,7 +25,13 @@
                 <directory>targetprod</directory>
             </build>
         </profile>
+
+
     </profiles>
+
+    <!--<activeProfiles>-->
+        <!--<activeProfile>spring_remote</activeProfile>-->
+    <!--</activeProfiles>-->
 
     <dependencies>
         <dependency>
@@ -34,5 +40,6 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
 
 </project>
