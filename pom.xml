@@ -8,25 +8,18 @@
     <artifactId>me.yd</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Yd</name>
-    <description></description>
-    <url></url>
-    <licenses>
-        <license>
-            <name>MIT</name>
-            <comments>MIT license</comments>
-        </license>
-    </licenses>
-    <organization>
-        <name>hk</name>
-        <url>hk.com</url>
-    </organization>
-    <developers>
-        <developer>
-            <name>yd</name>
-            <email>yd</email>
-        </developer>
-    </developers>
+    <build>
+        <directory>targettest</directory>
+    </build>
 
+    <!-- another profile, need to use -P flag -->
+    <profiles>
+        <profile>
+            <id>prod</id>
+            <build>
+                <directory>targetprod</directory>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
