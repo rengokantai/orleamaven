@@ -9,6 +9,17 @@
     <version>1.0-SNAPSHOT</version>
     <build>
         <directory>targettest</directory>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <verbose>true</verbose>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
     <!-- another profile, need to use -P flag -->
@@ -40,6 +51,8 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
+
 
 
 </project>

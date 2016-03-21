@@ -89,3 +89,39 @@ we can see junit.
 ```
 exclusions>exclusion>groupId+artifactId
 ```
+
+#####5
+######2 lifecycle
+default,clean site
+```
+mvn help:describe -Dcmd=clean
+mvn help:describe -Dcmd=deploy
+```
+######3 important phases
+
+compile, test-compile, test, package,install deploy
+
+######4. plugins and goals
+```
+mvn compiler:compile
+mvn help:describe -Dplugin=compiler
+```
+
+get compiler help goal's detail info
+```
+mvn compiler:help -Ddetail=true -Dgoal=compile
+```
+
+######5
+list all props of compiler:compile
+```
+mvn help:describe -Dcmd=compiler:compile -Ddetail
+```
+Use it.
+```
+mvn compiler:compile -Dmaven.compiler.verbose=true
+```
+remove cached file:
+```
+git rm -r . --cached
+```
