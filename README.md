@@ -166,3 +166,8 @@ mvn javadoc:javadoc -Dheader=me.yd -Dfooter=YD
 ```
 mvn deploy
 ```
+######6 surefire
+do not execute unittest file
+```
+mvn install -Dmaven.test.skip=true
+```
