@@ -34,3 +34,23 @@ PACKAGE_ENV = PROD
     </property>
 </activation>
 ```
+######7 Generating Projects
+```
+mvn archetype:generate
+```
+groupId: me.yd
+artifactId: orlea
+
+
+#####4
+######2
+pull dependency to local
+```
+mvn dependency:copy-dependencies
+```
+
+install junit,ctrl shift T, or tweak settings in intellij  
+[Import maven dependencies automatically](http://stackoverflow.com/questions/11454822/import-maven-dependencies-in-intellij-idea)
+
+
+
