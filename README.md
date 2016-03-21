@@ -162,3 +162,7 @@ mvn jar:jar -Djar.finalName=test -Djar.forceCreation=true
 ```
 mvn javadoc:javadoc -Dheader=me.yd -Dfooter=YD
 ```
+######5 deploy
+```
+mvn deploy
+```
