@@ -157,3 +157,8 @@ or
 ```
 mvn jar:jar -Djar.finalName=test -Djar.forceCreation=true
 ```
+
+######4 javadoc
+```
+mvn javadoc:javadoc -Dheader=me.yd -Dfooter=YD
+```
