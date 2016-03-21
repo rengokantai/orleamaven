@@ -22,4 +22,15 @@ use
 ```
 mvn clean
 ```
-to delete generated package
+to delete generated package  
+
+set a var in environment path:  
+PACKAGE_ENV = PROD
+```
+<activation>
+    <property>
+        <name>env.PACKAGE_ENV</name>
+        <value>PROD</value>
+    </property>
+</activation>
+```

@@ -16,6 +16,12 @@
     <profiles>
         <profile>
             <id>prod</id>
+            <activation>
+                <property>
+                    <name>env.PACKAGE_ENV</name>
+                    <value>PROD</value>
+                </property>
+            </activation>
             <build>
                 <directory>targetprod</directory>
             </build>
