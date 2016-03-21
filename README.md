@@ -171,3 +171,29 @@ do not execute unittest file
 ```
 mvn install -Dmaven.test.skip=true
 ```
+######8 war
+```
+mvn archetype:generate
+```
+type
+```
+maven-archetype-webapp,1,5,me.yd(id),web-maven,1.0(default)
+```
+then
+```
+mvn package
+```
+change
+```
+<packaging>war</packaging>
+```
+End at 4:22
+
+#####7
+```
+mvn archetype:generate
+```
+type
+```
+spring-data-basic,
+```
